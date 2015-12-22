@@ -1,0 +1,24 @@
+body { font-family: '微软雅黑', '宋体'; font-size: 14px; }
+input { background: none; border: 1px solid #666; border-radius: 3px; margin-top: 20px; }
+.text-red { color: #ff0000; font-weight: bolder; }
+.bg-green { background: #01A4B9; }
+.wrapper { width: 960px; margin: 0 auto; }
+.head-wrapper { float: left; display: inline; width: 100%; height: 111px; }
+.logo { float: left; display: inline; width: 30%; }
+.logo .title { text-align: center; font-size: 40px; font-weight: bolder; height: 80px; line-height: 80px; color: #0171b9; }
+.logo .title2 { text-align: center; color: #666; }
+.head-info { float: right; display: inline; width: 60%; height: 111px; text-align: right; }
+.head-info td { padding: 0 5px; }
+.nav { width: 100%; height: 44px; background: #0171b9; }
+.nav ul { width: 960px; margin: 0 auto; }
+.nav li { float: left; display: inline; }
+.nav li a { display: inline-block; width: 120px; height: 44px; line-height: 44px; text-align: center; text-decoration: none; color: #fefefe; font-weight: bolder; }
+.nav li a:hover, .nav li a.curr { background: #fefefe; color: #0171b9; }
+.block-show { float: left; display: inline; width: 300px; height: 150px; border: 1px solid #ccc; margin: 8px; }
+.block-show a { padding-left: 10px; line-height: 24px; color: #333; }
+.block-show .title-wrapper { float: left; display: inline; width: 100%; border-bottom: 1px solid #ccc; }
+.block-show .title-mark { float: left; display: inline; widht: 1px; height: 24px; border-right: 5px solid #ccc; }
+.block-show .title-text { float: left; display: inline; height: 24px; line-height: 24px; padding-left: 10px; font-weight: bolder; color: #0171b9; }
+
+.foot{width:100%;border-top:2px solid #0171b9;text-align:center;}
+.foot *{color:#666;line-height: 32px;font-size: 12px;}

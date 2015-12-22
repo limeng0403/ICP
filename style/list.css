@@ -1,0 +1,6 @@
+.product-list ul { float: left; display: inline; }
+.product-list li { float: left; display: inline; width: 21%; margin: 20px 2%; text-align: center; }
+.product-list li a { text-decoration: none; color: #333; }
+.product-list li a:hover { text-decoration: underline; }
+.product-list li p { line-height: 28px; }
+.product-list li img { display: inline-block; height: 80px; }

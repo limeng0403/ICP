@@ -1,0 +1,6 @@
+.product-detail img { vertical-align: inherit; }
+.left { float: left; display: inline; width: 45%; }
+.right { float: right; display: inline; width: 45%; }
+.product-detail td, .product-detail th { padding: 10px 0; }
+.product-detail th { text-align: right; font-weight: bolder; }
+.product-detail .readme { line-height: 24px; }

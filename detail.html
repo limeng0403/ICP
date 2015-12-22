@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="theme-color" content="#2932e1">
+    <title>闲玩——注册</title>
+    <link href="http://cdn.bootcss.com/meyer-reset/2.0/reset.min.css" rel="stylesheet">
+    <link href="style/index.css" rel="stylesheet">
+    <link href="style/detail.css" rel="stylesheet">
+</head>
+
+<body ng-app="myapp">
+    <div class="wrapper">
+        <div class="head-wrapper">
+            <div class="logo">
+                <p class="title">闲玩</p>
+                <p class="title2">您身边的闲置玩具信息发布平台</p>
+            </div>
+            <div class="head-info">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>用户名：</td>
+                            <td>
+                                <input type="text" id="username" />
+                            </td>
+                            <td>密码：</td>
+                            <td>
+                                <input type="password" id="password" />
+                            </td>
+                            <td>
+                                <input type="button" value="登录" onclick="login()" />
+                            </td>
+                            <td>
+                                <input type="button" value="注册" onclick="register()" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6">
+                                <span class="text-red">*</span> 网站部分功能为有偿提供，推荐注册VIP用户。
+                                <input type="button" value="注册VIP用户" onclick="register()" /> 或者
+                                <input type="button" value="账户充值" onclick="goPage('pay.html')" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="list.html?type=maorong">毛绒</a></li>
+            <li><a href="list.html?type=huwai">户外运动</a></li>
+            <li><a href="list.html?type=jimu">积木拼插</a></li>
+            <li><a href="list.html?type=diandong">遥控电动</a></li>
+            <li><a href="pay.html" class="bg-green">加入VIP会员</a></li>
+        </ul>
+    </div>
+    <div class="wrapper" ng-controller="myController">
+        <div class="left">
+            <img src="image/{{type}}{{info.id}}.jpg" width="100%" />
+        </div>
+        <div class="right">
+            <table class="product-detail" width="100%">
+                <tbody>
+                    <tr>
+                        <th width="20%">名称：</th>
+                        <td ng-bind='info.name'></td>
+                    </tr>
+                    <tr>
+                        <th>成色：</th>
+                        <td ng-bind='info.level'></td>
+                    </tr>
+                    <tr>
+                        <th>介绍：</th>
+                        <td class="readme" ng-bind='info.readme'></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2" align="right"><input type="button" value="咨询" onclick="buyEvent()" /></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <div style="clear:both;"></div>
+    <div class="foot">
+        <p>Copyright © 2015 All rights reserved.</p>
+        <p>数信互融科技发展有限公司</p>
+        <p><a href="http://www.miibeian.gov.cn/" target="_blank">苏ICP备10095435号-5</a></p>
+        <p>建议使用1280*800以上分辨率，使用Chrome、Firefox、Safari、ie10版本浏览器</p>
+    </div>
+    <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/angular.js/1.2.28/angular.min.js"></script>
+    <script src="script/common.js"></script>
+    <script src="script/data.js"></script>
+    <script src="script/detail.js"></script>
+</body>
+
+</html>

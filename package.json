@@ -1,0 +1,20 @@
+{
+  "name": "icp.website",
+  "version": "0.0.1",
+  "description": "icp website",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.coding.net:lionney/ICP_website.git"
+  },
+  "author": "Lion Lee",
+  "license": "ISC"
+}
